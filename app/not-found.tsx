@@ -16,12 +16,7 @@ export default function NotFound() {
     <div className="error-page">
       <h2>Not Found</h2>
       <p>
-        Could not find the requested resource.{" "}
-        <a
-          href="/products"
-          onClick={handleHomeClick}>
-          Home
-        </a>
+        Could not find the requested resource. <a href="/">Home</a>
       </p>
     </div>
   );
