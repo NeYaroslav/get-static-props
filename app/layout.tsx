@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.scss";
 import { Inter } from "next/font/google";
+import { Footer, Header } from "./components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,17 +14,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header>
-          <ul>
-            <li>
-              <Link href={"/"}>Home</Link>
-            </li>
-            <li>
-              <Link href={"/products"}>Products</Link>
-            </li>
-          </ul>
-        </header>
-        {children}
+        <div className="wrapper">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

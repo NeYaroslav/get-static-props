@@ -13,7 +13,7 @@ export default function NotFound() {
   };
 
   return (
-    <>
+    <div className="error-page">
       <h2>Not Found</h2>
       <p>
         Could not find the requested resource.{" "}
@@ -23,6 +23,6 @@ export default function NotFound() {
           Home
         </a>
       </p>
-    </>
+    </div>
   );
 }

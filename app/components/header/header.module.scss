@@ -1,0 +1,39 @@
+.header {
+  background: var(--bg-color-2);
+  box-shadow: var(--shadow);
+}
+.header-container {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding: var(--gap-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header__logo {
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.header__nav {
+}
+.header__menu {
+  margin-left: var(--gap-lg);
+}
+.menu-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-header__link {
+  list-style: none;
+  &:not(:first-child) {
+    margin-left: var(--gap-md);
+  }
+  a {
+    color: inherit;
+    &:not(:hover) {
+      text-decoration: none;
+    }
+  }
+}
