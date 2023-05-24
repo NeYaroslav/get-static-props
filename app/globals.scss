@@ -24,6 +24,8 @@
   --gap-xxl: 1.5rem;
   --gap-xxxl: 3rem;
 
+  --container: 75rem;
+
   --radius-md: var(--gap-md);
 
   --shadow: 0 0 var(--gap-md) 0 rgba(62, 62, 62, 0.552);
@@ -46,4 +48,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding: var(--gap-lg);
+  width: 100%;
 }

@@ -3,7 +3,7 @@
   box-shadow: var(--shadow);
 }
 .header-container {
-  max-width: 75rem;
+  max-width: var(--container);
   margin-inline: auto;
   padding: var(--gap-lg);
   display: flex;
